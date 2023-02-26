@@ -1,5 +1,6 @@
 body{
   background-color: hsl(0, 2%, 10%);
+  touch-action: none;
 }
 
 p{
