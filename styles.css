@@ -1,34 +1,31 @@
-      .splash {
-        cursor: pointer;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        height: 99%;
-        width: 99%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0);
-        transition: all ease-in-out 600ms;
-      }
+body{
+  background-color: hsl(0, 2%, 10%);
+}
 
-      .hidden {
-        transition: 0.5s;
-        display: none;
-      }
+p{
+  font-size: 10vw;
+  color: white;
+  text-align: center;
+}
 
-      .splash-text {
-        height: 90%;
-        color: white;
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+#chaser{
+  width: fit-content;
+  background-color: hsla(0, 100%, 100%, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  box-shadow: 2px 7px 2em 2em hsl(0deg 0% 100% / 50%);
+}
 
-      .dog {
-        position: fixed;
-        width: 15%;
-        left: 50%;
-        top: 50%;
-        translate: -50% -50%;
-        border-radius: 20%;
-      }
+.crows{
+  width: 40vw;
+  animation: crows 13s linear infinite;
+}
+
+@keyframes crows {
+  100% {
+    transform: rotate(360deg);
+  }
+}
